@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Salahti",
+    "slug": "Salahti",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
