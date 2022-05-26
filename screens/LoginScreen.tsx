@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import { Button, StyleSheet, TextInput, View, Text } from 'react-native';
+import { SignatureKind } from 'typescript';
 
 export default function LoginScreen() {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
+
+  //Sign in & Sign up
+  const [create,setCreate] = useState(false); 
+
+  const signIn =() => {
+
+  }
+  const signUp =() => {
+
+}
+
 
 return( 
   <View style = {styles.container}>
@@ -20,6 +32,14 @@ return(
         style = {styles.textInput}
         secureTextEntry = {true}
         />
+        {create ? (
+            <></>
+        ) : (
+            <>
+            <Button title="Sign in" onPress = {() => signIn()} />
+            <Text style = {styles.text}> Create an Account!</Text>
+            </>
+        )}
   </View>
   );
 }
@@ -37,5 +57,9 @@ const styles = StyleSheet.create({
         padding: 10,
         marginBottom: 20,
         borderRadius:5,
+    },
+    text:{
+        color:'blue',
+        marginTop: 20,
     }
   });
