@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202053943409",
+    "project_id": "salahti",
+    "storage_bucket": "salahti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202053943409:android:d4fdb751a680f877949bd0",
+        "android_client_info": {
+          "package_name": "com.salahti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202053943409-mld13gkn12pakr82mgnlam9buaat3bcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC061oarsXwrZWgfDP1lcyX3ynv0FjrQdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202053943409-mld13gkn12pakr82mgnlam9buaat3bcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
