@@ -33,11 +33,16 @@ return(
         secureTextEntry = {true}
         />
         {create ? (
-            <></>
+            <>
+            <Button title="Sign Up" onPress = {() => signUp()} />
+            <Text style = {styles.text} onPress={() => setCreate(false)}>
+                Sign In!</Text>
+            </>
         ) : (
             <>
             <Button title="Sign in" onPress = {() => signIn()} />
-            <Text style = {styles.text}> Create an Account!</Text>
+            <Text style = {styles.text} onPress={() => setCreate(true)}>
+                Create an Account!</Text>
             </>
         )}
   </View>
