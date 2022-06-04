@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, TextInput, View, Text } from 'react-native';
 import { SignatureKind } from 'typescript';
+import FirebaseUtil from '../utils/FirebaseUtil';
 
 export default function LoginScreen() {
   const [email,setEmail] = useState('');
@@ -10,10 +11,16 @@ export default function LoginScreen() {
   const [create,setCreate] = useState(false); 
 
   const signIn =() => {
-
+    FirebaseUtil.signIn(email,password).catch((e) => {
+      console.log(e);
+      alert('Your email or password is incorrect');
+    });
   }
   const signUp =() => {
-
+    FirebaseUtil.signUp(email,password).catch((e) => {
+      console.log(e);
+      alert('Something went wrong');
+    });
 }
 
 
